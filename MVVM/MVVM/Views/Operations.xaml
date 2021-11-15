@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MVVM.Views.Operations">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Jhonathan giron " FontSize="30" HorizontalOptions="Center" Margin="20"></Label>
+
+
+            <StackLayout Orientation="Horizontal" Margin="25" HorizontalOptions="Center">
+                <Label Text="Valor 1" FontSize="22"/>
+                <Editor Text="{Binding Valor1}" FontSize="22" TextColor="#71C270"></Editor>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" Margin="5" HorizontalOptions="Center">
+                <Label Text="Valor 2" FontSize="22"/>
+                <Editor Text="{Binding Valor2}" FontSize="22" TextColor="#71C270"></Editor>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" Margin="15">
+                <Button Text="Sumar" Command="{Binding Sumar}" BackgroundColor="#8CB0B9 " TextColor="White" FontSize="15"/>
+                <Label Text="{Binding ResultSuma}" FontSize="20" TextColor="#71C270"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" Margin="15">
+                <Button Text="Restar" Command="{Binding Restar}" BackgroundColor="#8CB0B9 " TextColor="White" FontSize="15"/>
+                <Label Text="{Binding ResultResta}" FontSize="20" TextColor="#71C270"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" Margin="15">
+                <Button Text="Multiplicar" Command="{Binding Multiplicar}" BackgroundColor="#8CB0B9 " TextColor="White" FontSize="15"/>
+                <Label Text="{Binding ResultMulti}" FontSize="20" TextColor="#71C270" />
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" Margin="15">
+                <Button Text="Dividir" Command="{Binding Dividir}" BackgroundColor="#8CB0B9 " TextColor="White" FontSize="15"/>
+                <Label Text="{Binding ResultDiv}" FontSize="20" TextColor="#71C270"/>
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
